@@ -13,7 +13,7 @@ type AccountController struct {
 	DB *gorm.DB
 }
 
-func (ctrl AccountController) createAccount(ctx *gin.Context) {
+func (ctrl AccountController) CreateAccount(ctx *gin.Context) {
 	accountModel := model.AccountModel{
 		DB: ctrl.DB,
 	}
